@@ -1,0 +1,113 @@
+.footer {
+    position: sticky;
+    background-color: #3D4050;
+    padding: 30px 0;
+    line-height: 18px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__copyright {
+        margin: 0;
+        font-size: 13px;
+        color: #ffffff;
+        padding-right: 40px;
+        border-right: 1px solid #c3c3c3;
+        margin-right: 40px;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        font-size: 13px;
+        color: #c3c3c3;
+        margin: 0;
+        padding: 0;
+        padding-right: 40px;
+        padding-right: 40px;
+        border-right: 1px solid #c3c3c3;
+        margin-right: 35px;
+        gap: 38px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 10px;
+        white-space: nowrap;
+        cursor: pointer;
+
+        &:hover {
+            color: #43ABF0;
+            transition: 0.2s;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        list-style: none;
+        font-size: 13px;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        gap: 38px;
+
+        &-item {
+            display: flex;
+            gap: 10px;
+            white-space: nowrap;
+        }
+
+        &-link {
+            text-decoration: none;
+            color: #ffffff;
+
+
+            &:hover {
+                color: #43ABF0;
+                transition: 0.2s;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .footer {
+        padding: 20px 0;
+
+        &__wrapper {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &__copyright {
+            border: none;
+            margin: 0;
+            padding: 0;
+            order: 2;
+        }
+
+        &__list {
+            border: none;
+            margin: 0;
+            padding: 0;
+            order: 0;
+        }
+
+        &__contacts {
+            order: 1;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+
+        &__list {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}

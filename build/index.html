@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css?v=4">
+</head>
+
+<body class="page__body">
+  <div class="wrapper">
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/logo.svg">
+        </a>
+        <button class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+        <ul class="header__list">
+          <li class="header__item blue">
+            <a>Бизнес</a>
+          </li>
+          <li class="header__item">
+            <a>О нас</a>
+          </li>
+          <li class="header__item">
+            <a>Цены</a>
+          </li>
+          <li class="header__item">
+            <a>Оформить заказ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="preview">
+    <div class="container">
+      <h1 class="preview__title"><span class="blue">Lorem ipsum</span> dolor sit<br>amet
+        consectetur <span class="blue">adipiscing</span></h1>
+      <p class="preview__subtitle">At vero eos et accusamus et iusto odio dignissimos
+        ducimus!</p>
+      <p class="preview__description">
+        - Totam rem aperiam eaque ipsa<br>
+        - Sit voluptatem accusantium doloremque laudantium<br>
+        - Sed ut perspiciatis, unde omnis iste natus error
+      </p>
+      <div class="button__wrapper">
+        <button class="button" type="button">Заказать</button>
+        <button class="button button--secondary">Подробнее</button>
+      </div>
+    </div>
+  </section>
+  <section class="order">
+    <div class="container">
+      <div class="order__wrapper">
+        <h2 class="order__title">Оформление <span class="blue">заказа</span></h2>
+        <p class="order__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        <ul class="roadmap">
+          <li class="roadmap__item">
+            <div class="roadmap__wrapper">
+              <img class="roadmap__icon roadmap__icon--search" src="img/search.svg">
+              <img class="roadmap__img roadmap__img--search" src="img/circle.svg">
+            </div>
+            <span class="roadmap__description">Lorem ipsum dolor
+              sit<br>amet</span>
+          </li>
+          <li class="roadmap__item">
+            <div class="roadmap__wrapper">
+              <img class="roadmap__icon roadmap__icon--percent" src="img/percent.svg">
+              <img class="roadmap__img roadmap__img--percent" src="img/circle.svg">
+            </div>
+            <span class="roadmap__description">Сonsecteturadipiscing elit</span>
+          </li>
+          <li class="roadmap__item">
+            <div class="roadmap__wrapper">
+              <img class="roadmap__icon roadmap__icon--doc" src="img/doc.svg">
+              <img class="roadmap__img roadmap__img--doc" src="img/circle.svg">
+            </div>
+            <span class="roadmap__description">Sed do eiusmod tempor</span>
+          </li>
+          <li class="roadmap__item">
+            <div class="roadmap__wrapper">
+              <img class="roadmap__icon roadmap__icon--envelope" src="img/envelope.svg">
+              <img class="roadmap__img roadmap__img--envelope" src="img/circle.svg">
+            </div>
+            <span class="roadmap__description">Esse cillum dolore
+              eu<br>fugiat</span>
+          </li>
+          <li class="roadmap__item">
+            <div class="roadmap__wrapper">
+              <img class="roadmap__icon roadmap__icon--dollar" src="img/dollar.svg">
+              <img class="roadmap__img roadmap__img--dollar" src="img/circle.svg">
+            </div>
+            <span class="roadmap__description">Excepteur sint occaecat<br>cupidatat non proident</span>
+          </li>
+        </ul>
+        <form class="order__form">
+          <div class="dropdown">
+            <div class="dropdown__header">Выберите тип системы</div>
+            <div class="dropdown__list">
+              <div class="dropdown__item active">Sed ut perspiciatis</div>
+              <div class="dropdown__item">Nemo enim ipsam</div>
+              <div class="dropdown__item">Et harum quidem</div>
+              <div class="dropdown__item">Temporibus autem</div>
+              <div class="dropdown__item">Itaque earum rerum</div>
+              <div class="dropdown__item">Sed ut perspiciatis</div>
+              <div class="dropdown__item">Nemo enim ipsam</div>
+              <div class="dropdown__item">Et harum quidem</div>
+              <div class="dropdown__item">Temporibus autem</div>
+              <div class="dropdown__item">Itaque earum rerum</div>
+            </div>
+          </div>
+          <input class="order__input order__input--email" type="text" id="email" name="email" placeholder="Ваш e-mail"
+            required>
+          <input class="order__input order__input--name" type="text" id="name" name="name" placeholder="Ваше имя"
+            required>
+          <div class="slider-container">
+            <div class="slider-label">
+              <span> Sed ut perspiciatis, unde omnis iste natus </span>
+              <span id="slider-value">75%</span>
+            </div>
+            <input type="range" min="0" max="100" value="75" id="slider">
+          </div>
+          <label class="file-upload">
+            <input type="file">
+            <span>ПРИКРЕПИТЬ ФАЙЛ</span>
+          </label>
+          <button class="button button--submit" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <p class="footer__copyright">
+          © 2018 «LoremIpsum.net» Все права защищены.
+        </p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <img class="footer__icon" src="img/qiwi.svg">
+            <span class="footer__description">QIWI Wallet</span>
+          </li>
+          <li class="footer__item">
+            <img class="footer__icon" src="img/yandex.svg">
+            <span class="footer__description">Yandex Money</span>
+          </li>
+          <li class="footer__item">
+            <img class="footer__icon" src="img/web.svg">
+            <span class="footer__description">Web Money</span>
+          </li>
+        </ul>
+        <ul class="footer__contacts">
+          <li class="footer__contacts-item">
+            <img class="footer__icon" src="img/mail.svg">
+            <a class="footer__contacts-link" href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+          </li>
+          <li class="footer__contacts-item">
+            <img class="footer__icon" src="img/vk.svg">
+            <a class="footer__contacts-link" href="https/vk.com">Мы вконтакте</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="./js/script.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.file-upload {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border: 2px solid #4a90e2;
+    border-radius: 6px;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    grid-area: file;
+    line-height: 20px;
+  }
+  
+  .file-upload:hover {
+    background: rgba(74, 144, 226, 0.2);
+  }
+  
+  .file-upload input {
+    display: none;
+    grid-area: file;
+  }

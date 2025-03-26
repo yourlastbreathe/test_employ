@@ -1,0 +1,36 @@
+.button {
+    padding: 15px 31px;
+    background-color: #3E9CDC;
+    border: solid 1px #ffffff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 13px;
+    cursor: pointer;
+    min-width: 183px;
+
+    &--secondary {
+        background-color: #ffffff;
+        color: #2A2B30;
+        border-color: #6F6D7B;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 30px;
+    }
+
+    &--submit {
+        grid-area: submit;
+    }
+}
+
+@media (max-width: 767px) {
+    .button {
+
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
+}

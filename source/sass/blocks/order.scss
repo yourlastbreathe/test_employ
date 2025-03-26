@@ -1,0 +1,106 @@
+.order {
+    padding: 102px 0 150px 0;
+    background-image: url(../../img/map.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #272733;
+    flex: 1;
+
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__input {
+        background: rgba(255, 255, 255, 0.85);
+        padding: 12px;
+        font-size: 18px;
+        border-radius: 3px;
+        border: 1px solid #ffffff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+
+        &::placeholder {
+            color: #272733;
+        }
+
+        &--email {
+            grid-area: email;
+        }
+
+        &--name {
+            grid-area: name;
+        }
+    }
+
+    &__title {
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        margin: 0;
+        color: #bbbbbb;
+        margin-bottom: 80px;
+    }
+
+    &__form {
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "dropdown email name"
+            "range range file"
+            ". submit ."
+        ;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+@media (max-width: 1199px) {
+    .order {
+        padding: 80px 0 100px;
+
+        &__description {
+            margin-bottom: 50px;
+        }
+
+        &__title {
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        &__form {
+            grid-template-areas:
+                "dropdown dropdown"
+                "email name"
+                "range range"
+                "file submit";
+            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .order {
+        &__form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__wrapper {
+            display: block;
+        }
+    }
+}
